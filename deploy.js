@@ -36,7 +36,7 @@ const argv = yargs.argv;
     case 'develop':
       const previewConfig = Object.assign({}, defaults, {
         qrcodeFormat: 'image',
-        qrcodeOutputDest: `qrcode/preview-qrcode-v${version}.jpg`,
+        qrcodeOutputDest: `./qrcode/preview-qrcode-v${version}.jpg`,
         robot,
       });
       await ci.preview(previewConfig);
