@@ -7,6 +7,7 @@ class App extends Component {
   componentDidMount () {
     console.log(this.props.children)
     console.log(name)
+    console.log(process.env.NODE_ENV)
   }
 
   componentDidShow () {}
