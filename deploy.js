@@ -17,8 +17,8 @@ const argv = yargs.argv;
   const project = new ci.Project({
     appid: 'wx7f72a7b8724c789d',
     type: 'miniProgram',
-    projectPath: './dist',
-    privateKeyPath: './weapp.key',
+    projectPath: './dist/weapp',
+    privateKeyPath: '../weapp.key',
     ignores: ['node_modules/**/*'],
   });
   const defaults = {
@@ -30,7 +30,6 @@ const argv = yargs.argv;
       postcss: false,
       minified: false
     },
-    // onProgressUpdate: console.log,  
   };
   switch (type) {
     case 'develop':

@@ -28,7 +28,8 @@
     "dev:jd": "npm run build:jd -- --watch",
     "dev:quickapp": "npm run build:quickapp -- --watch",
     "f1:weapp": "npm run build:weapp -- --watch --env feature1",
-    "deploy": "node deploy.js"
+    "deploy": "node deploy.js",
+    "miniu": "node miniu.js"
   },
   "browserslist": [
     "last 3 versions",
@@ -45,6 +46,7 @@
     "@tarojs/taro": "3.1.4",
     "lodash": "4.17.15",
     "miniprogram-ci": "^1.1.6",
+    "miniu": "^1.11.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "taro-ui": "^3.0.0-alpha.3",
